@@ -3,7 +3,7 @@
 
 *****Picture 2******
 
-Found the original photo on the internet. A cmp indicate there is no difference between the original and the CTF file
+Found the original photo on the internet. A cmp indicate there is no difference between the original and the CTF file. Higly likely that there is no flag in this file
 
 ------foremost------
 
