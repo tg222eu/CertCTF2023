@@ -95,7 +95,8 @@ Exif comment    :
 
 foremost -i audio.wav: No hidden data in footer/header
 
-Exiftool message2.wav:
+
+--------------Exiftool message2.wav:--------------
 ExifTool Version Number         : 12.40
 File Name                       : message2.wav
 Directory                       : .
@@ -115,3 +116,10 @@ Bits Per Sample                 : 16
 Artist                          : CTF
 ID3 Size                        : 20
 Duration                        : 0:01:02
+
+----------exiv2-------------------
+
+File name       : message2.wav
+File size       : 11888756 Bytes
+MIME type       : video/riff
+Image size      : 0 x 0
