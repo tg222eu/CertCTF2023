@@ -7,9 +7,9 @@ foremost -i picture.jpg: No hidden data in footer/header
 
 ---------Stegseek---------
 
-stegseek --seed audio.wav
+stegseek --seed picture.wav
 
-No pattern found
+error: Could not find a valid seed.
 
 --------Exiftool:-----------
 
@@ -101,6 +101,11 @@ Exif comment    :
 
 foremost -i audio.wav: No hidden data in footer/header
 
+---------Stegseek---------
+
+stegseek --seed audio.wav
+
+error: Could not find a valid seed.
 
 --------------Exiftool message2.wav:--------------
 ExifTool Version Number         : 12.40
