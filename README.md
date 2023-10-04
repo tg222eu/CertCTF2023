@@ -5,6 +5,12 @@
 
 foremost -i picture.jpg: No hidden data in footer/header
 
+---------Stegseek---------
+
+stegseek --seed audio.wav
+
+No pattern found
+
 --------Exiftool:-----------
 
 ExifTool Version Number         : 12.40
