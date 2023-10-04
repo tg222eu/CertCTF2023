@@ -3,6 +3,10 @@
 
 *****Picture 2******
 
+Found the original photo on the internet. A cmp indicate there is no difference between the original and the CTF file
+
+------foremost------
+
 foremost -i picture.jpg: No hidden data in footer/header
 
 ---------Stegseek---------
