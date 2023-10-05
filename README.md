@@ -1,7 +1,7 @@
 # C...er..tC..T.F202...3
 
 ******RSA******
-Found certificate in packet 3432 and extracted it
+Found certificate in packet 3422 and extracted it
 
 Was able to looking at it in "openssl x509 -in cert -text -noout"
 Extracted public key "openssl x509 -pub.key -noout -in cert > pub.key
