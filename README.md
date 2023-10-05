@@ -5,8 +5,8 @@ Found certificate in packet 3422 and extracted it
 
 Was able to looking at it in "openssl x509 -in cert -text -noout"
 Extracted public key "openssl x509 -pub.key -noout -in cert > pub.key
-python3 RsaCtfTool.py --publickey pub.key --private > privatekey.txt
-
+python3 RsaCtfTool.py --publickey pub.key --private
+Sorry, cracking failed.
 
 *****Picture 2******
 
