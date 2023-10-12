@@ -45,9 +45,9 @@ CTF[Sneaky]
 00000000 -> 0
 01011101 -> 93 (']' in ASCII)
 
-5. In the IRC chat there is a convertsation between Alice and Bob where BOB opens up a secret vault. Investigating futher from Bobs IP address he access a FTP server. A FTP-DATA protocol from this server reveals the flag:
+5. In the IRC chat there is a convertsation between Alice and Bob where BOB ask Alice to unlock the secret vault. Investigating futher from Bobs IP address he access a FTP server. A FTP-DATA protocol from this server reveals the flag:
 CTF[Hunter2]
-It can also be revealed by searching for "frame contains "CTF" or look directly at FTP-Data protocol in Protocol Hierarchy
+It can also be revealed by searching for "frame contains "CTF" or look directly at FTP-Data protocol in Protocol Hierarchy as its the only packet of its kind
 
 6. By using binwalk I could see there are additional file inside the PCAP file. Extracting the files and opening up second file a private key and a certificate is revealed. When inserting the key in Edit -> Preference -> Protocol -> TLS -> RSA key list
 Adding IP 192.168.0.10, Port: 443, Protocol HTTP, *Path to key*, a new HTTP protocol is revealed with secret.png file. Extracting the HTTP object and open the picture reveal the flag:
