@@ -1,4 +1,11 @@
-# C...er..tC..T.F202...3
+# Cert.se CTF 2023
+
+Cert.se have hidden 7 flags provided in a zip file. In the zip file there is a Pcap file and a odt file
+
+1. When opening the ODT file there is a word puzzle CTF[☔-ra+💿d=i+⛺t=d]
+Symbols are Rain, CD and Tent converted to CTF[Incident]
+
+2. 
 
 ******RSA******
 Found certificate in packet 3422 and extracted it
