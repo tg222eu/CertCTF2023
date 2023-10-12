@@ -13,7 +13,8 @@ CTF[WILLIAM]
 https://github.com/tg222eu/CertCTF2023/blob/main/Solution/3.png
 CTF[Sneaky]
 
-4. I found the original picture of the second image. Comparing them there seem to be only 25 byte difference. When looking at the HexEditor at the bottom of the page E and e has been added. This looked like binary code and when converted to binary then to ASCI we get CTF[Bluffcity]
+4. I found the original picture of the second image on an online webshop. Comparing them there seem to be only 25 byte difference. When looking at the HexEditor at the bottom of the page E and e has been added. This looked like binary code and when converted to binary then to ASCI we get:
+CTF[Bluffcity]
 
 00000001 -> 1
 00000000 -> 0
@@ -50,5 +51,5 @@ CTF[Hunter2]
 It can also be revealed by searching for "frame contains "CTF" or look directly at FTP-Data protocol in Protocol Hierarchy as its the only packet of its kind
 
 6. By using binwalk I could see there are additional file inside the PCAP file. Extracting the files and opening up second file a private key and a certificate is revealed. When inserting the key in Edit -> Preference -> Protocol -> TLS -> RSA key list
-Adding IP 192.168.0.10, Port: 443, Protocol HTTP, *Path to key*, a new HTTP protocol is revealed with secret.png file. Extracting the HTTP object and open the picture reveal the flag:
+Adding IP 192.168.0.10, Port: 443, Protocol HTTP, *Path to key*, a new HTTP protocol from the secret-management server is revealed with secret.png file. Extracting the HTTP object and open the picture reveal the flag:
 CTF[GALOIS]
