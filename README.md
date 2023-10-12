@@ -16,7 +16,9 @@ CTF[Sneaky]
 4. I found the original picture of the second image on an online webshop. Comparing them there seem to be only 25 byte difference. When looking at the HexEditor at the bottom of the page E and e has been added. This looked like binary code and when converted to binary then to ASCI we get:
 CTF[Bluffcity]
 
-00000001 -> 1
+<details>
+  <summary>Binary to ASCII</summary>
+  00000001 -> 1
 00000000 -> 0
 01000011 -> 67 ('C' in ASCII)
 00000000 -> 0
@@ -45,6 +47,8 @@ CTF[Bluffcity]
 01111001 -> 121 ('y' in ASCII)
 00000000 -> 0
 01011101 -> 93 (']' in ASCII)
+</details>
+
 
 5. In the IRC chat there is a convertsation between Alice and Bob where BOB ask Alice to unlock the secret vault. Investigating futher from Bobs IP address he access a FTP server. A FTP-DATA protocol from this server reveals the flag:
 CTF[Hunter2]
@@ -53,3 +57,7 @@ It can also be revealed by searching for "frame contains "CTF" or look directly 
 6. By using binwalk I could see there are additional file inside the PCAP file. Extracting the files and opening up second file a private key and a certificate is revealed. When inserting the key in Edit -> Preference -> Protocol -> TLS -> RSA key list
 Adding IP 192.168.0.10, Port: 443, Protocol HTTP, *Path to key*, a new HTTP protocol from the secret-management server is revealed with secret.png file. Extracting the HTTP object and open the picture reveal the flag:
 CTF[GALOIS]
+
+7. I was unable to find the last flag. I highly supect its in the message.wav file that was sent between Alice and Christina. I noticed there is a tone in the file. Because the song loops I took one part of the loop, inverted it, matched the section with the sound and put both to left channel. That way I filter out almost all music. When listening to it there is a coded beep signal. Its not morse code. The beeps have 7 different length. I measured out the signal accourding to their duration
+
+1224122412241223213321333164122222162124312251621232218122231731224122412241
