@@ -3,9 +3,49 @@
 Cert.se have hidden 7 flags provided in a zip file. In the zip file there is a Pcap file and a odt file
 
 1. When opening the ODT file there is a word puzzle CTF[☔-ra+💿d=i+⛺t=d]
-Symbols are Rain, CD and Tent converted to CTF[Incident]
+Symbols are Rain, CD and Tent converted to: 
+CTF[Incident]
 
-2. 
+2. When ODT is converted to zip its possible to extract the meta data and the images of the file. In the meta.xml file there is line of code <meta:user-defined meta:name="CTF">CTF[WILLIAM]</meta:user-defined>
+CTF[WILLIAM]
+
+3. Using the tool https://stegonline.georgeom.net/upload its possible to use the function Inverse half and a flag is revealed:
+https://github.com/tg222eu/CertCTF2023/blob/main/Solution/3.png
+CTF[Sneaky]
+
+4. I found the original picture of the second image. Comparing them there seem to be only 25 byte difference. When looking at the HexEditor at the bottom of the page E and e has been added. This looked like binary code and when converted to binary then to ASCI we get CTF[Bluffcity]
+
+00000001 -> 1
+00000000 -> 0
+01000011 -> 67 ('C' in ASCII)
+00000000 -> 0
+01010100 -> 84 ('T' in ASCII)
+00000000 -> 0
+01000110 -> 70 ('F' in ASCII)
+00000000 -> 0
+01011011 -> 91 ('[' in ASCII)
+00000000 -> 0
+01000010 -> 66 ('B' in ASCII)
+00000000 -> 0
+01101100 -> 108 ('l' in ASCII)
+00000000 -> 0
+01110101 -> 117 ('u' in ASCII)
+00000000 -> 0
+01100110 -> 102 ('f' in ASCII)
+00000000 -> 0
+01100110 -> 102 ('f' in ASCII)
+00000000 -> 0
+01000011 -> 67 ('C' in ASCII)
+00000000 -> 0
+01101001 -> 105 ('i' in ASCII)
+00000000 -> 0
+01110100 -> 116 ('t' in ASCII)
+00000000 -> 0
+01111001 -> 121 ('y' in ASCII)
+00000000 -> 0
+01011101 -> 93 (']' in ASCII)
+
+5. 
 
 ******RSA******
 Found certificate in packet 3422 and extracted it
