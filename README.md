@@ -45,7 +45,10 @@ CTF[Sneaky]
 00000000 -> 0
 01011101 -> 93 (']' in ASCII)
 
-5. 
+5. In the IRC chat there is a convertsation between Alice and Bob where BOB opens up a secret vault. Investigating futher from Bobs IP address he access a FTP server. A FTP-DATA protocol from this server reveals the flag:
+CTF[Hunter2]
+It can also be revealed by searching for "frame contains "CTF" or look directly at FTP-Data protocol in Protocol Hierarchy
+
 
 ******RSA******
 Found certificate in packet 3422 and extracted it
