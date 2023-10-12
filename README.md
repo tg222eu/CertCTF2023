@@ -49,6 +49,7 @@ CTF[Sneaky]
 CTF[Hunter2]
 It can also be revealed by searching for "frame contains "CTF" or look directly at FTP-Data protocol in Protocol Hierarchy
 
+6. By using binwalk I could see there are additional file inside the PCAP file. Extracting the files and opening up second file a private key and a certificate is revealed. 
 
 ******RSA******
 Found certificate in packet 3422 and extracted it
