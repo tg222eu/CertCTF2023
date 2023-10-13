@@ -59,12 +59,12 @@ CTF[Hunter2]
 ![alt text](https://github.com/tg222eu/CertCTF2023/blob/main/Solution/secret.png)<br>
 It can also be revealed by searching for "frame contains "CTF" or look directly at FTP-Data protocol in Protocol Hierarchy as its the only packet of its kind
 <br><br>
-![alt text](https://github.com/tg222eu/PFsenseInstallation/blob/main/UFS.JPG)<br>
+![alt text](https://github.com/tg222eu/CertCTF2023/blob/main/Solution/6.JPG)<br>
 6. By using binwalk I could see there are additional file inside the PCAP file. Extracting the files and opening up second file a private key and a certificate is revealed. When inserting the key in Edit -> Preference -> Protocol -> TLS -> RSA key list
 Adding IP 192.168.0.10, Port: 443, Protocol HTTP, *Path to key*, a new HTTP protocol from the secret-management server is revealed with secret.png file. Extracting the HTTP object and open the picture reveal the flag:
 CTF[GALOIS]
 <br><br>
-![alt text](https://github.com/tg222eu/PFsenseInstallation/blob/main/UFS.JPG)<br>
+![alt text](https://github.com/tg222eu/CertCTF2023/blob/main/Solution/Signal.JPG)<br>
 7. I was unable to find the last flag. I highly supect its in the message.wav file that was sent between Alice and Christina. I noticed there is a tone in the file. Because the song loops I took one part of the loop, inverted it, matched the section with the sound and put both to left channel. That way I filter out almost all music. When listening to it there is a coded beep signal. Its not morse code. The beeps have 7 different length. I measured out the signal accourding to their duration
 
 1224122412241223213321333164122222162124312251621232218122231731224122412241
