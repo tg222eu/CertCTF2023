@@ -64,7 +64,7 @@ It can also be revealed by searching for "frame contains "CTF" or look directly 
 Adding IP 192.168.0.10, Port: 443, Protocol HTTP, *Path to key*, a new HTTP protocol from the secret-management server is revealed with secret.png file. Extracting the HTTP object and open the picture reveal the flag:
 CTF[GALOIS]
 <br><br>
-![alt text](https://github.com/tg222eu/CertCTF2023/blob/main/Solution/Signal.JPG)<br>
+![alt text](https://github.com/tg222eu/CertCTF2023/blob/main/Solution/signal.JPG)<br>
 7. I was unable to find the last flag. I highly supect its in the message.wav file that was sent between Alice and Christina. I noticed there is a tone in the file. Because the song loops I took one part of the loop, inverted it, matched the section with the sound and put both to left channel. That way I filter out almost all music. When listening to it there is a coded beep signal. Its not morse code. The beeps have 7 different length. I measured out the signal accourding to their duration
 
 1224122412241223213321333164122222162124312251621232218122231731224122412241
